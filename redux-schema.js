@@ -1,33 +1,35 @@
 {
     users: {
         isAuthed,
-            isFetching,
-            error,
-            authedId,
-            [uid]: {
+        isFetching,
+        error,
+        authedId,
+        [uid]: {
             lastUpdated,
-                info: {
+            info: {
                 name,
-                    uid,
-                    avatar,
-      }
+                uid,
+                avatar
+            }
         }
     },
     modal: {
         duck,
-            isOpen
+        isOpen
     },
     ducks: {
+        isFetching,
+        error,
         [duckId]: {
             lastUpdated,
                 info: {
-                avatar,
+                     avatar,
                     duckId,
                     name,
                     text,
                     timestamp,
                     uid,
-      }
+                }
         }
     },
     likeCount: {
@@ -35,34 +37,34 @@
     },
     usersDucks: {
         isFetching,
-            error,
-            [uid]: {
+        error,
+        [uid]: {
             lastUpdated,
-                duckIds: [duckId, duckId, duckId]
+            duckIds: [duckId, duckId, duckId]
         }
     },
     usersLikes: {
         duckid: true,
-  }
+    }
     feed: {
         isFetching,
-            error,
-            newDucksAvailable,
-            duckIdsToAdd: [duckId, duckId],
-                duckIds: [duckid, duckId, duckId]
+        error,
+        newDucksAvailable,
+        duckIdsToAdd: [duckId, duckId],
+        duckIds: [duckid, duckId, duckId]
     }
     replies: {
         isFetching,
-            error,
-            [duckId]: {
+        error,
+        [duckId]: {
             lastUpdated,
-                replies: {
+            replies: {
                 [replyId]: {
                     name,
-                        reply,
-                        uid,
-                        timestamp,
-                        avatar
+                    reply,
+                    uid,
+                    timestamp,
+                    avatar
                 }
             }
         }
