@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-const MainContainer = () => {
+const MainContainer = () => (
+  <p>Hello World!</p>
+)
 
-    return (
-        <p>Hello World!</p>
-    )
-
-}
-
-export default MainContainer;
+export default MainContainer
