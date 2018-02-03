@@ -1,11 +1,11 @@
 import React from 'react';
-import { Router, Route, hashHistory } from 'react-router';
+import { BrowserRouter, Route, hashHistory } from 'react-router-dom';
 import { MainContainer } from '../containers'
 
 const routes = (
-    <Router history={hashHistory}>
-        <Router path='/' component={MainContainer} />
-    </Router>
+    <BrowserRouter history={hashHistory}>
+        <Route path='/' component={MainContainer} />
+    </BrowserRouter>
 )
 
 export default routes
