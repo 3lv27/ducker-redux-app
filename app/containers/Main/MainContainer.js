@@ -1,7 +1,9 @@
 import React from 'react'
 
-const MainContainer = () => (
-  <p>Hello World!</p>
+const MainContainer = props => (
+  <div>
+    Hi
+  </div>
 )
 
 export default MainContainer
