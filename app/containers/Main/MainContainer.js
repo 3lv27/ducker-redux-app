@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainContainer = props => (
   <div>
-    Hi
+    {props.children}
   </div>
 )
 

@@ -1,2 +1,2 @@
 export MainContainer from './Main/MainContainer'
-export HomeConatiner from './Home/HomeContainer'
+export HomeContainer from './Home/HomeContainer'

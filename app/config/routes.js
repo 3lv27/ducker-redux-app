@@ -1,16 +1,17 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { MainContainer, HomeContainer } from '../containers'
 
 const routes = (
-  <BrowserRouter>
-    <div>
+  <Router>
+    <MainContainer>
       <Switch>
-        <Route path='/' component={MainContainer} />
-        <Route path='/' component={HomeContainer}/>
+        <Route exact={true} path='/' component={HomeContainer} />
+
       </Switch>
-    </div>
-  </BrowserRouter>
+    </MainContainer>
+  </Router>
+
 )
 
 export default routes
