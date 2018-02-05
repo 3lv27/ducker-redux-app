@@ -1,10 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import {container, title, slogan} from './style.css'
 
 export default function Home (props) {
   return (
-    <div>
-      <h1>Honme</h1>
+    <div className={container}>
+      <p className={title}> Duckr </p>
+      <p className={slogan}> The real time, cloud base, modular, scalable, growth hack, social platform. </p>
     </div>
   )
 }
