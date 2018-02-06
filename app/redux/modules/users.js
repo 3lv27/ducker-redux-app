@@ -13,19 +13,19 @@ export function authUser (uid) {
   }
 }
 
-function unautUser () {
+function unauthUser () {
   return {
     type: UNAUTH_USER,
   }
 }
 
-function fetchingUser () {
+export function fetchingUser () {
   return {
     type: FETCHING_USER,
   }
 }
 
-function fetchingUserFailure (error) {
+export function fetchingUserFailure (error) {
   console.warn(error)
   return {
     type: FETCHING_USER_FAILURE,
