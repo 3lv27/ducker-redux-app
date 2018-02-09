@@ -1,13 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { MainContainer, HomeContainer, AuthContainer } from '../containers'
+import { MainContainer, HomeContainer, AuthContainer, FeedContainer } from '../containers'
 
-const routes = (
+export const routes = () => (
   <Router>
     <MainContainer>
       <Switch>
         <Route exact={true} path='/' component={HomeContainer} />
-        <Route path='/auth' component={AuthContainer} />
+        <Route path='login' component={AuthContainer} />
+        <Route path='feed' component={FeedContainer} />
 
       </Switch>
     </MainContainer>

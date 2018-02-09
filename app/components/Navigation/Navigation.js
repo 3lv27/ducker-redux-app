@@ -23,7 +23,7 @@ function ActionLinks ({ isAuthed }) {
     </ul>
     : <ul>
       <li><NavLink className={link} to='/'> Home </NavLink></li>
-      <li><NavLink className={link} to='/auth'> Authenticate </NavLink></li>
+      <li><NavLink className={link} to='/login'> Authenticate </NavLink></li>
     </ul>
 }
 
